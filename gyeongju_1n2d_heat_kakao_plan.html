@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<title>경주 폭염대응 1박 2일 선택형 플랜 | 부산·울산 5인</title>
+<style>
+:root{
+  --bg:#f3f6fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#dde3ec;
+  --navy:#111827;--blue:#2563eb;--cyan:#0891b2;--green:#15803d;--amber:#b45309;
+  --red:#b42318;--purple:#7e22ce;--yellow:#fee500;--shadow:0 14px 38px rgba(16,24,40,.09);
+  --radius:22px;--radius2:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#eaf4ff 0,#f6f8fc 420px,#f3f6fb 100%);color:var(--ink);font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;line-height:1.62;word-break:keep-all}
+button,input,select{font:inherit}
+a{color:inherit}
+.container{width:min(1180px,calc(100% - 28px));margin:auto}
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(circle at 82% 18%,rgba(34,211,238,.45),transparent 28%),
+  radial-gradient(circle at 15% 5%,rgba(96,165,250,.34),transparent 25%),
+  linear-gradient(135deg,#0f172a 0%,#173f73 58%,#0369a1 100%);color:#fff;padding:42px 0 54px}
+.hero:after{content:"";position:absolute;inset:auto -8% -175px;height:230px;background:#f6f8fc;border-radius:50% 50% 0 0/28% 28% 0 0;opacity:.95}
+.hero .container{position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.24);background:rgba(255,255,255,.11);backdrop-filter:blur(10px);padding:7px 12px;border-radius:999px;font-size:13px;font-weight:800;letter-spacing:.02em}
+h1{font-size:clamp(32px,5vw,58px);line-height:1.08;margin:18px 0 14px;letter-spacing:-.045em}
+.hero p{max-width:780px;margin:0;color:rgba(255,255,255,.82);font-size:clamp(15px,2.2vw,19px)}
+.hero-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px;max-width:850px}
+.hero-chip{padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.17)}
+.hero-chip b{display:block;font-size:13px;color:#bae6fd}.hero-chip span{display:block;font-weight:800;margin-top:2px}
+main{position:relative;z-index:3;margin-top:-26px;padding-bottom:100px}
+.section{margin:24px 0}.card{background:var(--card);border:1px solid rgba(221,227,236,.9);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:34px 2px 14px}
+.section-head h2{margin:0;font-size:clamp(23px,3vw,32px);letter-spacing:-.035em}.section-head p{margin:5px 0 0;color:var(--muted);font-size:14px}
+.step{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:10px;background:#e0edff;color:#1d4ed8;font-size:14px;font-weight:900;margin-right:7px}
+.notice{display:flex;gap:14px;align-items:flex-start;background:#fff8e8;border:1px solid #f5d790;border-radius:18px;padding:17px 18px}.notice strong{color:#8a4b00}.notice .icon{font-size:27px;line-height:1}
+.weather-layout{display:grid;grid-template-columns:1.12fr .88fr;gap:16px}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field label{display:block;font-size:13px;font-weight:800;color:#475467;margin-bottom:6px}.input,.select{width:100%;border:1px solid #cfd7e4;border-radius:12px;padding:11px 12px;background:#fff;color:#182230;outline:none}.input:focus,.select:focus{border-color:#60a5fa;box-shadow:0 0 0 3px rgba(96,165,250,.18)}
+.btn{appearance:none;border:0;border-radius:12px;padding:11px 15px;font-weight:900;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:7px;transition:.18s transform,.18s box-shadow,.18s opacity}.btn:hover{transform:translateY(-1px)}.btn:active{transform:translateY(0)}.btn-primary{background:#1d4ed8;color:white;box-shadow:0 8px 20px rgba(37,99,235,.24)}.btn-dark{background:#111827;color:white}.btn-light{background:#eef2f7;color:#344054;border:1px solid #d6dde8}.btn-cyan{background:#0e7490;color:white}.btn-yellow{background:var(--yellow);color:#181600;box-shadow:0 8px 24px rgba(223,193,0,.25)}.btn-red{background:#b42318;color:white}.btn-sm{padding:8px 11px;border-radius:10px;font-size:13px}.btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
+.weather-result{min-height:100%;padding:18px;border-radius:17px;background:linear-gradient(145deg,#eff8ff,#f8fbff);border:1px solid #cfe6fb}.weather-result h3{margin:0 0 8px}.weather-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.weather-kpi{background:#fff;border:1px solid #dce9f5;border-radius:12px;padding:10px}.weather-kpi small{display:block;color:#667085}.weather-kpi b{font-size:20px}.recommend-box{border-radius:12px;padding:12px;background:#e8f6ee;color:#155d31;font-weight:750}
+.route-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.route-card{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fbfcfe}.route-title{display:flex;align-items:center;justify-content:space-between;gap:10px}.route-title h3{margin:0;font-size:19px}.route-line{display:flex;align-items:stretch;gap:10px;margin-top:14px}.route-line .rail{width:3px;background:linear-gradient(#2563eb,#9ec5ff);border-radius:3px;margin:8px 5px}.route-stops{display:grid;gap:12px;flex:1}.stop{position:relative;padding-left:4px}.stop b{display:block}.stop small{color:var(--muted)}
+.sync-panel{margin-top:14px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}.sync-time{border-radius:14px;padding:14px;background:#101828;color:#fff}.sync-time small{display:block;color:#98a2b3}.sync-time strong{font-size:21px}.sync-time.meet{background:#0e7490}
+.scenario-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.scenario-card{position:relative;text-align:left;width:100%;background:#fff;border:1px solid var(--line);border-radius:19px;padding:18px;cursor:pointer;transition:.18s ease;min-height:220px}.scenario-card:hover{transform:translateY(-3px);box-shadow:0 14px 25px rgba(16,24,40,.08)}.scenario-card.selected{border:2px solid #2563eb;background:linear-gradient(145deg,#eff6ff,#fff);box-shadow:0 12px 28px rgba(37,99,235,.13)}.scenario-card .pick{position:absolute;right:13px;top:13px;width:24px;height:24px;border-radius:50%;border:2px solid #c8d1df;background:white}.scenario-card.selected .pick{background:#2563eb;border-color:#2563eb;box-shadow:inset 0 0 0 5px #fff}.scenario-no{display:inline-block;font-size:12px;font-weight:900;color:#1d4ed8;background:#dbeafe;border-radius:7px;padding:3px 7px}.scenario-card h3{margin:10px 32px 6px 0;font-size:20px;line-height:1.3}.scenario-card p{margin:0;color:var(--muted);font-size:14px}.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:13px}.tag{font-size:11px;font-weight:850;border-radius:999px;padding:4px 8px;background:#f2f4f7;color:#475467}.tag.hot{background:#ffebe9;color:#a8271a}.tag.cool{background:#e0f7fa;color:#0e6774}.tag.rain{background:#e5edff;color:#2949a1}.tag.value{background:#e8f6ee;color:#146c38}.tag.thrill{background:#f3e8ff;color:#7e22ce}
+.detail{overflow:hidden}.detail-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;padding:24px;background:linear-gradient(135deg,#10233e,#164d7c);color:white;border-radius:18px}.detail-hero h2{margin:7px 0 8px;font-size:clamp(25px,3.5vw,38px);line-height:1.18}.detail-hero p{margin:0;color:#cbdced}.score-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.score{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);padding:10px;border-radius:12px}.score small{color:#b8d6ee;display:block}.score b{font-size:18px}.detail-body{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.subcard{border:1px solid var(--line);border-radius:17px;padding:17px;background:#fff}.subcard h3{margin:0 0 10px;font-size:18px}.procon{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pro,.con{border-radius:12px;padding:12px;font-size:14px}.pro{background:#eaf8ef;color:#185d32}.con{background:#fff1ef;color:#8d2b20}.pro b,.con b{display:block;margin-bottom:4px}
+.timeline{display:grid;gap:0}.time-row{display:grid;grid-template-columns:76px 18px 1fr;gap:10px;align-items:start}.time-row .time{font-weight:900;color:#1d4ed8;font-size:14px;padding-top:8px}.time-row .dotcol{position:relative;min-height:64px}.time-row .dotcol:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:#2563eb;top:13px;left:4px}.time-row .dotcol:after{content:"";position:absolute;width:2px;background:#d4def0;top:23px;bottom:-8px;left:8px}.time-row:last-child .dotcol:after{display:none}.event{padding:6px 0 14px}.event b{display:block}.event small{display:block;color:var(--muted);margin-top:2px}.event .why{display:inline-block;margin-top:5px;background:#f2f4f7;border-radius:8px;padding:3px 7px;color:#475467;font-size:12px}
+.choice-row{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.choice-pill{border:1px solid #cfd7e4;background:#fff;border-radius:999px;padding:8px 12px;font-weight:800;cursor:pointer;font-size:13px}.choice-pill.active{background:#101828;color:white;border-color:#101828}
+.restaurant-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.restaurant{border:1px solid var(--line);border-radius:18px;padding:17px;background:white;position:relative}.restaurant.selected{border:2px solid #0e7490;background:#f2fbfd}.restaurant h3{margin:7px 0 5px}.restaurant p{font-size:13px;color:var(--muted);margin:0}.restaurant .radio{position:absolute;top:15px;right:15px}.menu{margin:12px 0 0;padding-left:17px;color:#344054;font-size:13px}.menu li{margin:3px 0}.mini-meta{display:flex;gap:6px;flex-wrap:wrap}.mini-meta span{background:#f2f4f7;border-radius:7px;padding:3px 6px;font-size:11px;font-weight:800;color:#475467}
+.decision-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid var(--line);border-radius:16px;font-size:14px}.decision-table th,.decision-table td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.decision-table th{background:#f4f7fb}.decision-table tr:last-child td{border-bottom:0}.decision-table td:first-child{font-weight:900}
+.budget-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}.cost-list{display:grid;grid-template-columns:1fr 160px;gap:9px 12px;align-items:center}.cost-list label{font-size:14px}.cost-list .input{text-align:right}.total-box{background:linear-gradient(145deg,#111827,#1f3b62);color:white;border-radius:18px;padding:20px}.total-box small{color:#aab8cc}.total{font-size:34px;font-weight:950;letter-spacing:-.04em}.per{font-size:21px;font-weight:850;color:#7dd3fc}.budget-note{font-size:12px;color:#b9c5d5;margin-top:10px}
+.check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.check-card{border:1px solid var(--line);border-radius:17px;padding:16px;background:#fff}.check-card h3{margin:0 0 10px}.checks{display:grid;gap:7px}.check{display:flex;align-items:flex-start;gap:8px;font-size:14px}.check input{margin-top:4px;accent-color:#2563eb}
+.safety-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.safety{border-radius:14px;padding:15px;background:#fff6f4;border:1px solid #f4c7c1}.safety b{display:block;color:#9c2f24}.safety span{font-size:13px;color:#6c403b}
+.source-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}.source-list a{text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;font-size:13px}.source-list a:hover{border-color:#9bb8df;background:#f6faff}.source-list small{display:block;color:var(--muted)}
+.share-panel{background:linear-gradient(135deg,#fff8b0,#fee500);border:1px solid #e2c700}.share-panel h2{margin:0 0 7px}.share-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:15px}.share-preview{white-space:pre-wrap;background:rgba(255,255,255,.72);border:1px solid rgba(87,76,0,.18);border-radius:14px;padding:14px;max-height:330px;overflow:auto;font-size:13px;color:#302d00}.share-actions{display:flex;flex-direction:column;gap:8px}.share-actions .btn{width:100%;min-height:46px}.share-help{font-size:12px;color:#5e5600;margin-top:5px}
+.floating-share{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:40;border:0;background:var(--yellow);color:#171500;border-radius:999px;padding:13px 18px;font-weight:950;box-shadow:0 12px 30px rgba(0,0,0,.2);cursor:pointer}.toast{position:fixed;z-index:60;left:50%;bottom:80px;transform:translate(-50%,20px);background:#101828;color:#fff;border-radius:12px;padding:10px 14px;opacity:0;pointer-events:none;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+.map-btn{text-decoration:none;display:inline-flex;align-items:center;gap:5px;border:1px solid #cbd5e1;border-radius:9px;padding:6px 9px;font-size:12px;font-weight:850;background:white;color:#334155}.map-btn:hover{border-color:#60a5fa}.muted{color:var(--muted)}.small{font-size:13px}.hidden{display:none!important}.divider{height:1px;background:var(--line);margin:18px 0}.footer{text-align:center;color:#667085;font-size:12px;padding:30px 10px}.badge{display:inline-flex;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:900}.badge-blue{background:#dbeafe;color:#1d4ed8}.badge-red{background:#fee4e2;color:#b42318}.badge-green{background:#dcfae6;color:#087a38}.badge-dark{background:#344054;color:#fff}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr 1fr}.weather-layout,.budget-grid,.share-grid,.detail-hero{grid-template-columns:1fr}.scenario-grid,.restaurant-grid{grid-template-columns:1fr 1fr}.detail-body{grid-template-columns:1fr}.check-grid,.safety-grid{grid-template-columns:1fr 1fr}.source-list{grid-template-columns:1fr}}
+@media(max-width:620px){.container{width:min(100% - 18px,1180px)}.hero{padding-top:30px}.hero-grid,.route-grid,.field-grid,.scenario-grid,.restaurant-grid,.check-grid,.safety-grid,.sync-panel{grid-template-columns:1fr}.card{padding:17px;border-radius:18px}.section-head{align-items:flex-start;flex-direction:column}.scenario-card{min-height:auto}.cost-list{grid-template-columns:1fr 124px}.procon{grid-template-columns:1fr}.weather-kpis{grid-template-columns:1fr 1fr}.source-list{grid-template-columns:1fr}.floating-share{right:10px;bottom:10px}.time-row{grid-template-columns:64px 16px 1fr}.share-actions{flex-direction:column}.decision-table{font-size:12px}.decision-table th,.decision-table td{padding:9px 8px}}
+@media print{.hero{padding:20px 0;background:#fff!important;color:#111}.hero p{color:#444}.hero:after,.floating-share,.btn,.weather-result button,.source-list{display:none!important}main{margin:0}.card{box-shadow:none;break-inside:avoid}.scenario-grid{grid-template-columns:repeat(2,1fr)}body{background:#fff}.container{width:100%}.share-panel{background:#fff}.section{break-inside:avoid}}
+</style>
+</head>
+<body data-initial-scenario="" data-initial-restaurant="" data-shared="0">
+<header class="hero">
+  <div class="container">
+    <span class="eyebrow">🌊 폭염 대응 · 두 차량 동시 집결 · 카카오톡 공유형</span>
+    <h1>경주 1박 2일<br>5인 선택형 작전판</h1>
+    <p>부산 다대포 → 주례 픽업 차량 3명과 울산 현대자동차 공장 출발 차량 2명이 경주에서 합류합니다. 날씨와 체력에 따라 워터파크·루지·ATV·숙소 올인·뇌우 대피안을 바로 바꿀 수 있습니다.</p>
+    <div class="hero-grid">
+      <div class="hero-chip"><b>숙소</b><span>나리길 한옥 풀빌라</span></div>
+      <div class="hero-chip"><b>인원</b><span>성인 남자 5명 · 차량 2대</span></div>
+      <div class="hero-chip"><b>체크인 / 아웃</b><span>15:00 / 11:00</span></div>
+      <div class="hero-chip"><b>기본 원칙</b><span>한낮 야외활동 최소화</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <div class="notice">
+      <div class="icon">🔥</div>
+      <div><strong>현재 같은 폭염기 기본 결론:</strong> 최고기온 34℃ 이상이면 캘리포니아비치·강동워터파크·숙소 올인 중에서 고르고, 루지는 09:30 오픈런, ATV는 09시 전후 예약분만 고려하세요. 번개·강풍·굵은 비 예보가 있으면 ATV와 루지는 즉시 제외합니다.</div>
+    </div>
+  </section>
+
+  <div class="section-head"><div><h2><span class="step">1</span>여행 날짜와 날씨 판단</h2><p>날짜를 넣으면 경주 보문권 예보를 불러와 알맞은 시나리오를 추천합니다.</p></div></div>
+  <section class="card weather-layout">
+    <div>
+      <div class="field-grid">
+        <div class="field"><label for="tripDate">여행 시작일</label><input class="input" id="tripDate" type="date"></div>
+        <div class="field"><label for="manualWeather">직접 판단할 때</label>
+          <select class="select" id="manualWeather">
+            <option value="hot">폭염 34℃ 이상 · 비 적음</option>
+            <option value="mixed">폭염 + 소나기 가능</option>
+            <option value="mild">31~33℃ · 비교적 건조</option>
+            <option value="rain">뇌우·강풍·폭우</option>
+            <option value="tired">체력·예산 우선</option>
+          </select>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary" id="fetchWeather">☀️ 경주 예보 불러오기</button>
+        <button class="btn btn-light" id="manualRecommend">수동 조건으로 추천</button>
+      </div>
+      <p class="small muted">온라인 예보는 참고용입니다. 여행 당일 기상청 특보와 각 시설의 운영·운휴 공지를 최종 확인하세요.</p>
+    </div>
+    <div class="weather-result" id="weatherResult">
+      <h3>기본 추천: A · B · E</h3>
+      <p class="small muted">폭염에는 물놀이 또는 숙소 중심이 효율적입니다. 날짜를 선택하면 최고기온·강수확률·바람을 기준으로 다시 계산합니다.</p>
+      <div class="weather-kpis"><div class="weather-kpi"><small>최고기온</small><b>—</b></div><div class="weather-kpi"><small>강수확률</small><b>—</b></div><div class="weather-kpi"><small>최대풍속</small><b>—</b></div></div>
+      <div class="recommend-box">추천 후보: 캘리포니아비치 / 강동워터파크 / 숙소 올인</div>
+    </div>
+  </section>
+
+  <div class="section-head"><div><h2><span class="step">2</span>두 차량 집결 동기화</h2><p>집결지에서 바로 활동을 시작하도록 잡았습니다. 중간 집결 후 다시 차를 옮기는 시간을 없애는 방식입니다.</p></div></div>
+  <section class="card">
+    <div class="route-grid">
+      <div class="route-card">
+        <div class="route-title"><h3>🚙 부산 차량 · 3명</h3><span class="badge badge-blue">운전자 포함</span></div>
+        <div class="route-line"><div class="rail"></div><div class="route-stops">
+          <div class="stop"><b>다대포 출발</b><small>출발 10분 전 집결 · 주유/하이패스 확인</small></div>
+          <div class="stop"><b>주례에서 2명 픽업</b><small>큰 짐은 트렁크 동선 고려 · 정차 지점 미리 합의</small></div>
+          <div class="stop"><b>경주 시나리오별 주차장</b><small>예상 총 리드타임 2시간 10~20분 + 휴일 정체 여유</small></div>
+        </div></div>
+      </div>
+      <div class="route-card">
+        <div class="route-title"><h3>🚗 울산 차량 · 2명</h3><span class="badge badge-green">현대차 공장 출발</span></div>
+        <div class="route-line"><div class="rail"></div><div class="route-stops">
+          <div class="stop"><b>울산 현대자동차 공장 인근 집결</b><small>공장 출입구·주차 위치는 팀 안에서 정확히 지정</small></div>
+          <div class="stop"><b>경주 보문권 직행</b><small>예상 60~75분 + 휴일 정체 여유</small></div>
+          <div class="stop"><b>현장 주차장에서 부산팀 합류</b><small>한 팀이 늦으면 먼저 티켓/대기열 준비</small></div>
+        </div></div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="field-grid">
+      <div class="field"><label for="meetPlace">선택된 집결지</label><input class="input" id="meetPlace" value="캘리포니아비치 주차장"></div>
+      <div class="field"><label for="meetTime">목표 집결시각</label><input class="input" id="meetTime" type="time" value="09:20"></div>
+    </div>
+    <div class="sync-panel">
+      <div class="sync-time"><small>다대포 출발 권장</small><strong id="busanDepart">07:00</strong><div class="small">주례 픽업 포함</div></div>
+      <div class="sync-time"><small>울산 공장 출발 권장</small><strong id="ulsanDepart">08:05</strong><div class="small">현장 직행</div></div>
+      <div class="sync-time meet"><small>경주 집결</small><strong id="meetDisplay">09:20</strong><div class="small" id="meetDisplayPlace">캘리포니아비치 주차장</div></div>
+    </div>
+    <p class="small muted">시간은 조기 출발 기준의 실무용 추정치입니다. 출발 직전 카카오맵/내비 실시간 도착예정시간을 보고 울산팀 출발을 10~20분 조정하세요.</p>
+  </section>
+
+  <div class="section-head"><div><h2><span class="step">3</span>시나리오 선택</h2><p>카드를 누르면 집결지, 출발시각, 시간표, 예산이 함께 바뀝니다.</p></div></div>
+  <section class="scenario-grid" id="scenarioGrid"></section>
+
+  <section class="card detail section" id="scenarioDetail"></section>
+
+  <div class="section-head"><div><h2><span class="step">4</span>밥집 선택</h2><p>보문권 중심으로 동선, 더위, 5인 식사 속도까지 고려했습니다. 운영시간은 방문일에 다시 확인하세요.</p></div></div>
+  <section class="restaurant-grid" id="restaurantGrid"></section>
+  <section class="card section" id="restaurantDetail"></section>
+
+  <div class="section-head"><div><h2><span class="step">5</span>날씨별 최종 의사결정</h2><p>전날 밤과 출발 당일 아침, 아래 표 한 번만 보면 됩니다.</p></div></div>
+  <section class="card">
+    <table class="decision-table">
+      <thead><tr><th>조건</th><th>1순위</th><th>2순위</th><th>피할 것</th><th>선택 이유</th></tr></thead>
+      <tbody>
+        <tr><td>34℃ 이상 · 비 적음</td><td>A 캘리포니아비치</td><td>E 숙소 올인</td><td>한낮 ATV·루지</td><td>냉각 효과와 활동량을 함께 확보</td></tr>
+        <tr><td>34℃ 이상 · 소나기</td><td>B 강동워터파크</td><td>F 실내 방어</td><td>ATV·야외 대기 긴 시설</td><td>실내외 전환이 쉬움</td></tr>
+        <tr><td>31~33℃ · 건조</td><td>C 루지 오픈런</td><td>D ATV 새벽형</td><td>12~16시 야외활동</td><td>오전 활동 후 냉방·숙소로 이동</td></tr>
+        <tr><td>뇌우·강풍·폭우</td><td>F 실내 방어</td><td>B 운영 확인 후 실내</td><td>루지·ATV</td><td>번개·강풍에 야외 레저 중단 가능</td></tr>
+        <tr><td>멤버 피곤 · 저예산</td><td>E 맛집+풀빌라</td><td>G 취향 분할</td><td>종일권 강행</td><td>숙소 비용의 체감가치를 극대화</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="section-head"><div><h2><span class="step">6</span>5인 예산 계산기</h2><p>예약가와 장보기 금액을 실제 결제액으로 덮어쓰면 1인 부담액이 자동 계산됩니다.</p></div></div>
+  <section class="card budget-grid">
+    <div class="cost-list">
+      <label for="costStay">숙박 결제액</label><input class="input money" id="costStay" type="number" min="0" step="1000" value="230000">
+      <label for="costActivity">선택 활동비 합계</label><input class="input money" id="costActivity" type="number" min="0" step="1000" value="219500">
+      <label for="costLunch">선택 맛집 5인 식사</label><input class="input money" id="costLunch" type="number" min="0" step="1000" value="85000">
+      <label for="costParkMeal">워터파크/간식·카페</label><input class="input money" id="costParkMeal" type="number" min="0" step="1000" value="75000">
+      <label for="costGroceries">바비큐 장보기</label><input class="input money" id="costGroceries" type="number" min="0" step="1000" value="220000">
+      <label for="costBBQ">숙소 숯·그릴</label><input class="input money" id="costBBQ" type="number" min="0" step="1000" value="30000">
+      <label for="costPool">숙소 수영장</label><input class="input money" id="costPool" type="number" min="0" step="1000" value="50000">
+      <label for="costCars">차량 2대 유류·통행·주차</label><input class="input money" id="costCars" type="number" min="0" step="1000" value="70000">
+      <label for="costEtc">아침·얼음·예비비</label><input class="input money" id="costEtc" type="number" min="0" step="1000" value="50000">
+    </div>
+    <div class="total-box">
+      <small>예상 총액</small><div class="total" id="totalCost">₩1,029,500</div>
+      <small>5명 균등분담</small><div class="per" id="perCost">1인 ₩205,900</div>
+      <div class="divider" style="background:rgba(255,255,255,.15)"></div>
+      <div class="small" id="budgetSummary"></div>
+      <p class="budget-note">캘리포니아비치 입장권과 워터파크 할인가는 날짜·판매채널에 따라 크게 달라질 수 있어 활동비는 직접 수정 가능하게 했습니다. 나리길 풀빌라는 객실형과 예약채널에 따라 인원추가·수영장·바비큐 비용이 달라질 수 있으므로 예약내역을 우선하세요.</p>
+    </div>
+  </section>
+
+  <div class="section-head"><div><h2><span class="step">7</span>준비물·역할 분담</h2><p>체크하면 이 브라우저에 저장됩니다.</p></div></div>
+  <section class="check-grid" id="checkGrid">
+    <div class="check-card"><h3>🌊 물놀이</h3><div class="checks">
+      <label class="check"><input type="checkbox" data-check="rash"><span>래시가드·수영복·수영모</span></label>
+      <label class="check"><input type="checkbox" data-check="aqua"><span>아쿠아슈즈·슬리퍼</span></label>
+      <label class="check"><input type="checkbox" data-check="pouch"><span>방수팩·휴대폰 스트랩</span></label>
+      <label class="check"><input type="checkbox" data-check="sun"><span>워터프루프 선크림</span></label>
+      <label class="check"><input type="checkbox" data-check="towel"><span>큰 수건·여벌 속옷·비닐봉투</span></label>
+      <label class="check"><input type="checkbox" data-check="jacket"><span>구명조끼 보유 여부 / 대여비 확인</span></label>
+    </div></div>
+    <div class="check-card"><h3>🏎 루지·ATV</h3><div class="checks">
+      <label class="check"><input type="checkbox" data-check="long"><span>얇은 긴팔 또는 팔토시</span></label>
+      <label class="check"><input type="checkbox" data-check="shoe"><span>발을 덮는 운동화</span></label>
+      <label class="check"><input type="checkbox" data-check="extra"><span>땀·먼지 대비 여벌 상의</span></label>
+      <label class="check"><input type="checkbox" data-check="water"><span>개인 생수·전해질 음료</span></label>
+      <label class="check"><input type="checkbox" data-check="reserve"><span>ATV 전화 예약·운영 확인</span></label>
+      <label class="check"><input type="checkbox" data-check="sober"><span>활동 종료 전 전원 금주</span></label>
+    </div></div>
+    <div class="check-card"><h3>🥩 숙소·바비큐</h3><div class="checks">
+      <label class="check"><input type="checkbox" data-check="meat"><span>고기 1.5~2kg + 소시지</span></label>
+      <label class="check"><input type="checkbox" data-check="side"><span>쌈·김치·버섯·마늘·라면</span></label>
+      <label class="check"><input type="checkbox" data-check="ice"><span>얼음·생수·무알코올 음료</span></label>
+      <label class="check"><input type="checkbox" data-check="drink"><span>주류는 주량 합의 후 구매</span></label>
+      <label class="check"><input type="checkbox" data-check="game"><span>카드·보드게임·블루투스 스피커</span></label>
+      <label class="check"><input type="checkbox" data-check="toiletry"><span>칫솔·세면도구·충전기</span></label>
+    </div></div>
+  </section>
+
+  <section class="card section">
+    <h2 style="margin-top:0">안전 규칙 3개만 고정</h2>
+    <div class="safety-grid">
+      <div class="safety"><b>① 두 운전자는 숙소 주차 전까지 금주</b><span>저녁에 다시 외출하는 시나리오도 운전자 1명 완전 금주가 전제입니다.</span></div>
+      <div class="safety"><b>② 번개가 보이면 야외 레저 취소</b><span>루지·ATV·야외 워터파크 시설은 현장 통제에 즉시 따릅니다.</span></div>
+      <div class="safety"><b>③ 물놀이 후 바로 음주 금지</b><span>샤워·수분·식사 후 시작하고, 수영장 재입수 전 음주는 피합니다.</span></div>
+    </div>
+  </section>
+
+  <div class="section-head"><div><h2><span class="step">8</span>카카오톡 공유</h2><p>선택한 시나리오, 집결시각, 두 차량 출발시각, 식당, 예산을 자동 요약합니다.</p></div></div>
+  <section class="card share-panel" id="shareSection">
+    <div class="share-grid">
+      <div><h2>💬 우리 단톡방에 보내기</h2><p class="small">모바일 공유창에서 카카오톡을 선택하세요. 지원되지 않으면 카톡용 문구를 자동 복사합니다.</p><div class="share-preview" id="sharePreview"></div></div>
+      <div class="share-actions">
+        <button class="btn btn-yellow" id="nativeShare">카카오톡으로 요약 공유</button>
+        <button class="btn btn-dark" id="copyShare">카톡용 문구 복사</button>
+        <button class="btn btn-cyan" id="shareFile">선택 완료 HTML 파일 공유</button>
+        <button class="btn btn-light" id="printPlan">인쇄 / PDF 저장</button>
+        <div class="share-help">카카오 JavaScript 키 없이 작동하도록 휴대폰의 기본 공유창을 사용합니다. Android·iPhone에서 카카오톡을 고르면 됩니다. PC에서는 복사 기능이 가장 확실합니다.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-head"><div><h2>확인 링크·정보 출처</h2><p>운영시간·요금은 방문일에 변경될 수 있습니다. 아래 링크에서 마지막 확인 후 출발하세요.</p></div></div>
+  <section class="card source-list">
+    <a href="https://www.gjw.co.kr/California/contents.php?cmsNo=WA0100" target="_blank" rel="noopener"><b>캘리포니아비치 운영정보</b><small>운영·운휴, 이용시간</small></a>
+    <a href="https://www.gjw.co.kr/California/contents.php?cmsNo=WA0300" target="_blank" rel="noopener"><b>캘리포니아비치 요금·반입규정</b><small>구명조끼·음식물·정원 제한</small></a>
+    <a href="https://wp.kangdongcnl.com/" target="_blank" rel="noopener"><b>강동워터파크 공식</b><small>실내외 운영·스마트예약</small></a>
+    <a href="https://gyeongju-luge.kr/Operatinghours" target="_blank" rel="noopener"><b>경주루지월드 운영시간</b><small>기상에 따른 변경 확인</small></a>
+    <a href="https://gyeongju-luge.kr/Usagefee" target="_blank" rel="noopener"><b>경주루지월드 이용요금</b><small>횟수권·주차정보</small></a>
+    <a href="https://www.gyeongju.go.kr/tour/page.do?mnu_uid=2532" target="_blank" rel="noopener"><b>경주문화관광 보문 레저</b><small>ATV 업체 위치·전화번호</small></a>
+    <a href="https://www.xn--910b55ommgnou.kr/" target="_blank" rel="noopener"><b>나리길 한옥펜션 공식</b><small>객실·숙소 문의</small></a>
+    <a href="https://www.yeogi.com/domestic-accommodations/85023" target="_blank" rel="noopener"><b>나리길 이용조건 참고</b><small>입퇴실·수영장·바비큐 비용</small></a>
+    <a href="https://www.gyeongju.go.kr/epg/?c=3" target="_blank" rel="noopener"><b>경주동궁원 공식</b><small>운영시간·무료주차</small></a>
+    <a href="https://gyeongju.museum.go.kr/" target="_blank" rel="noopener"><b>국립경주박물관</b><small>뇌우 시 실내 대안</small></a>
+    <a href="https://www.tabling.co.kr/restaurant/2483" target="_blank" rel="noopener"><b>함양집 보문점</b><small>영업·대기·메뉴</small></a>
+    <a href="https://www.tabling.co.kr/restaurant/8200" target="_blank" rel="noopener"><b>낙지마실</b><small>영업·대기·메뉴</small></a>
+  </section>
+  <p class="footer">작성 기준: 2026-07-20 · 이동시간은 실시간 교통에 따라 달라집니다 · 숙소 주소: 경북 경주시 천북면 나리길 26-49</p>
+</main>
+
+<button class="floating-share" id="floatingShare">💬 카톡 공유</button>
+<div class="toast" id="toast"></div>
+
+<script>
+const SCENARIOS = {
+ A:{
+   no:'A',title:'캘리포니아비치 오픈런',subtitle:'폭염에도 재미를 최대로 뽑는 성인 5인용 워터파크 안',
+   tags:[['폭염 1순위','cool'],['도파민 높음','thrill'],['오픈런 필수','hot']],
+   meet:'캘리포니아비치 주차장',meetQuery:'캘리포니아비치',time:'09:20',busanLead:140,ulsanLead:75,
+   fit:'최고 34℃ 이상 · 낙뢰 가능성 낮음',heat:'낮음',energy:'높음',cost:'높음',lodging:'중상',
+   activityCost:219500,parkMeal:75000,restaurant:'jodol',
+   why:'다섯 명 모두 물놀이와 슬라이드를 좋아한다면 가장 실패 확률이 낮습니다. 오전 입장 직후 인기 시설부터 타고, 가장 뜨거운 시간대를 물속에서 보내므로 루지·ATV보다 체감온도 관리가 쉽습니다.',
+   pros:['성인 남자 5명이 즐길 만한 스릴 요소가 많음','한낮 폭염을 물놀이로 넘길 수 있음','경주월드·보문권에서 식사와 장보기가 쉬움'],
+   cons:['주말·성수기 대기와 입장 제한 가능','입장권·구명조끼·식비까지 합치면 비용이 큼','뇌우 시 야외시설 통제로 만족도가 떨어질 수 있음'],
+   mapLinks:[['캘리포니아비치','캘리포니아비치'],['숙소','경주 나리길 한옥 풀빌라']],
+   day1:[
+    ['07:00','부산팀 다대포 출발','주례 픽업과 휴일 정체를 감안해 여유 있게 출발'],
+    ['08:05','울산팀 현대차 공장 출발','현장 주차장에서 바로 합류'],
+    ['09:20','캘리포니아비치 주차장 집결','한 팀이 늦으면 먼저 스마트예약·락커·준비물 확인'],
+    ['09:40','입장 준비','선크림·방수팩·수영모·구명조끼 확인'],
+    ['10:00','오픈런 시작','초반 90분은 인기 슬라이드 우선, 이후 파도풀·휴식'],
+    ['12:30','파크 내 점심','무거운 메뉴보다 국수·덮밥 등 빠르게 먹고 수분 보충'],
+    ['13:15','2차 물놀이','컨디션 낮은 사람은 그늘·유수풀 중심'],
+    ['15:10','샤워·퇴장','15:30 전후 출발해야 체크인과 장보기가 여유'],
+    ['15:40','고기·얼음 빠른 구매','미리 주문 픽업 또는 보문권 매장에서 30분 컷'],
+    ['16:25','나리길 풀빌라 체크인','두 차량 모두 주차한 뒤부터 음주 가능'],
+    ['17:00','숙소 수영장·찜질방','워터파크 피로가 크면 수영 대신 샤워·휴식'],
+    ['18:30','바비큐','식사 → 술 → 보드게임 순서로 진행'],
+    ['22:30','야식·정산','라면/볶음밥, 다음 날 운전자 음주 마감시간 합의']
+   ],
+   day2:[['08:30','기상·물·커피','숙취 체크'],['09:00','간단 아침','컵라면·계란·과일'],['10:00','정리·분리수거','수영장 주변 젖은 물건 우선 회수'],['11:00','퇴실','선택한 보문권 식당으로 이동'],['11:25','해장 점심','조돌칼국수 또는 맷돌순두부'],['12:30','부산·울산 각자 복귀','운전자 상태 확인 후 출발']]
+ },
+ B:{
+   no:'B',title:'강동워터파크 실내외 전환',subtitle:'폭염과 소나기가 같이 예보될 때 가장 안정적인 방어형',
+   tags:[['소나기 대응','rain'],['실내외 전환','cool'],['안정성 높음','value']],
+   meet:'강동워터파크 주차장',meetQuery:'강동 워터파크 경주',time:'09:20',busanLead:140,ulsanLead:75,
+   fit:'폭염 + 소나기 · 구름 변화 큼',heat:'매우 낮음',energy:'중상',cost:'높음',lodging:'중상',
+   activityCost:250000,parkMeal:75000,restaurant:'hamyang',
+   why:'비가 오락가락하거나 한낮 체감온도가 매우 높을 때 실내와 실외를 오갈 수 있는 점이 핵심입니다. 야외 시설이 일부 닫혀도 실내 물놀이로 여행 전체가 무너지지 않습니다.',
+   pros:['날씨 변동에 가장 유연함','실내 휴식공간을 활용하기 좋음','보불로에서 숙소·보문권 이동이 편함'],
+   cons:['성인 5인 기준 순수 스릴은 캘리포니아비치보다 약하게 느낄 수 있음','가격·할인·운영구역이 시즌별로 변동','뇌우가 심하면 야외 시설은 동일하게 제한'],
+   mapLinks:[['강동워터파크','강동 워터파크 경주'],['숙소','경주 나리길 한옥 풀빌라']],
+   day1:[['07:00','부산팀 다대포 출발','주례 픽업 포함'],['08:05','울산팀 출발','보불로 직행'],['09:20','강동워터파크 주차장 집결','스마트예약·운영구역 확인'],['10:00','실외 인기시설 먼저','구름·바람이 안정적일 때 야외부터'],['11:30','실내 이동·휴식','소나기 또는 강한 햇빛 회피'],['12:30','점심·수분 보충','오래 쉬지 말고 40분 내외'],['13:20','컨디션별 자유 이용','스릴팀/휴식팀 분리 가능'],['14:45','샤워·퇴장','입장 마감이 이른 날이 있으므로 운영시간 확인'],['15:30','장보기','미리 작성한 리스트로 30분 내 완료'],['16:10','숙소 체크인','풀빌라 이용 여부는 체력 보고 결정'],['18:00','바비큐','물놀이 후 수분·식사 먼저'],['21:00','찜질방·게임','과음 대신 회복 중심']],
+   day2:[['08:30','기상'],['09:00','아침·정리'],['11:00','퇴실'],['11:25','함양집 한우물회 또는 곰탕','더우면 물회, 숙취면 곰탕'],['12:40','각자 복귀']]
+ },
+ C:{
+   no:'C',title:'루지 3회 오픈런 + 한우물회',subtitle:'더위가 조금 약한 날, 활동과 맛집과 숙소를 균형 있게',
+   tags:[['09:30 오픈런','hot'],['3회권','thrill'],['균형형','value']],
+   meet:'경주루지월드 주차장',meetQuery:'경주루지월드',time:'09:10',busanLead:140,ulsanLead:70,
+   fit:'최고 31~33℃ · 비 적음',heat:'중간',energy:'중상',cost:'중간',lodging:'높음',
+   activityCost:165000,parkMeal:40000,restaurant:'hamyang',
+   why:'루지 3회는 첫 판 적응, 두 번째 기록전, 세 번째 리벤지로 구성이 좋아 5명이 놀기 적당합니다. 11시 전후 끝내고 차가운 한우물회와 냉방 실내 코스를 붙이면 한낮 노출을 줄이면서 숙소도 충분히 씁니다.',
+   pros:['활동·맛집·숙소 비중이 균형적','3회권이 재미 대비 시간 효율이 좋음','숙소와 가까운 천북권에서 마무리 가능'],
+   cons:['헬멧 착용과 대기 중 더위가 큼','비·강풍에 운영 변경 가능','음주자는 탑승 불가하므로 반드시 오전에 진행'],
+   mapLinks:[['경주루지월드','경주루지월드'],['함양집 보문점','함양집 보문점'],['숙소','경주 나리길 한옥 풀빌라']],
+   day1:[['06:50','부산팀 출발','주례 픽업 후 바로 경주'],['08:00','울산팀 출발','천북권 직행'],['09:10','루지 주차장 집결','화장실·생수·표 구매'],['09:30','루지 1회','코스 적응, 무리한 추월 금지'],['10:00','루지 2회','5인 기록전'],['10:30','루지 3회','꼴찌 커피내기 리벤지'],['11:15','이동·열 식히기','에어컨 차량에서 수분 보충'],['11:35','함양집 보문점','한우물회 5 + 떡불고기 공유 추천'],['12:45','실내 카페 또는 동궁원','대기가 길면 조돌칼국수로 즉시 전환'],['14:00','장보기','고기 픽업·얼음·아침거리'],['15:00','숙소 체크인','수영장·찜질방·낮잠 자유'],['18:00','바비큐'],['21:00','5인 리그','카드·보드게임·간단 벌칙']],
+   day2:[['08:30','기상·커피'],['09:00','수영장 짧게 또는 숙면'],['10:00','정리'],['11:00','퇴실'],['11:20','맷돌순두부 또는 조돌칼국수'],['12:30','복귀']]
+ },
+ D:{
+   no:'D',title:'ATV 새벽 미션형',subtitle:'날씨가 허락할 때만 가능한, 기억에는 가장 강하게 남는 안',
+   tags:[['전화예약 필수','hot'],['먼지·땀','hot'],['팀미션','thrill']],
+   meet:'경주레저 ATV 주차장',meetQuery:'경주레저 ATV',time:'08:50',busanLead:140,ulsanLead:70,
+   fit:'최고 32℃ 이하 · 비/번개 없음',heat:'높음',energy:'높음',cost:'중간',lodging:'높음',
+   activityCost:150000,parkMeal:40000,restaurant:'nakji',
+   why:'두 차량이 있어 예약 장소로 바로 모인 뒤 활동하고, 땀과 먼지를 정리한 다음 보문권 실내 식사로 이동하기 좋습니다. 다만 폭염기에는 “하고 싶다”보다 당일 기온·습도·운영자 판단이 우선입니다.',
+   pros:['다섯 명의 팀미션과 사진이 가장 잘 남음','짧은 시간에 강한 활동 만족도','오전 종료 후 숙소 이용시간 확보'],
+   cons:['열·먼지·벌레·진흙 대비 필요','가격과 코스가 업체별로 달라 전화 확인 필수','비·번개·강풍이면 즉시 취소해야 함'],
+   mapLinks:[['경주레저 ATV','경주레저 ATV'],['보불 ATV','보불 ATV'],['숙소','경주 나리길 한옥 풀빌라']],
+   day1:[['06:30','부산팀 출발','주례 픽업 포함, 가장 이른 시나리오'],['07:40','울산팀 출발'],['08:50','예약 ATV 업체 집결','운영자에게 코스·소요시간·복장 확인'],['09:00','안전교육·장비 착용','생수 먼저 마시고 출발'],['09:15','ATV 체험','무리한 추월·장난 금지'],['10:15','종료·세안·옷 갈아입기','물티슈보다 샤워 가능한 장소 여부 사전 확인'],['11:00','낙지마실 또는 조돌칼국수','에어컨 실내에서 충분히 식히기'],['12:20','자동차박물관/카페','한낮 야외활동 금지'],['14:00','장보기'],['15:00','숙소 체크인·샤워'],['17:30','풀빌라·찜질방'],['19:00','바비큐']],
+   day2:[['09:00','느긋한 기상'],['09:30','아침'],['10:10','정리'],['11:00','퇴실'],['11:20','순두부 해장'],['12:20','복귀']]
+ },
+ E:{
+   no:'E',title:'맛집 + 장보기 + 풀빌라 올인',subtitle:'폭염경보·피로·저예산일 때 숙소 만족도를 최대로',
+   tags:[['체력 보존','cool'],['가성비','value'],['숙소 활용 최고','value']],
+   meet:'경주동궁원 무료주차장',meetQuery:'경주동궁원',time:'10:15',busanLead:140,ulsanLead:70,
+   fit:'폭염경보 · 전날 과로 · 비용 절감',heat:'매우 낮음',energy:'낮음',cost:'낮음',lodging:'최고',
+   activityCost:0,parkMeal:50000,restaurant:'hamyang',
+   why:'이미 개별 수영장과 찜질방이 있는 숙소를 예약했다면 밖에서 큰돈을 쓰지 않아도 됩니다. 점심 대기, 장보기, 카페까지 천천히 하고 15시 입실과 동시에 숙소를 끝까지 쓰는 전략입니다.',
+   pros:['비용과 체력 소모가 가장 낮음','친구들과 대화·게임 시간이 길음','날씨 실패 위험이 거의 없음'],
+   cons:['여행지 활동의 특별함은 상대적으로 약함','체크인 전 2~3시간을 알차게 설계해야 함','숙소 수영장 이용비와 수온 확인 필요'],
+   mapLinks:[['경주동궁원','경주동궁원'],['북군동 제1공영주차장','북군동 제1공영주차장'],['숙소','경주 나리길 한옥 풀빌라']],
+   day1:[['07:55','부산팀 출발','주례 08:25 전후 픽업'],['09:05','울산팀 출발'],['10:15','동궁원 무료주차장 집결','차량 2대가 세우기 쉬운 중립 지점'],['10:30','함양집/낙지마실/조돌칼국수','대기 짧은 곳을 실시간 선택'],['12:00','대형 카페·보드게임 구매','에어컨 아래서 여행 규칙·역할 확정'],['13:20','고기·술·아침거리 장보기','리스트 담당 2명, 결제 담당 1명'],['14:20','숙소 이동','체크인 10~20분 전 도착'],['15:00','체크인·방 배정','수영장 수온·찜질방·바비큐 시간 확인'],['15:30','풀빌라 5인 게임','튜브 컬링·소프트볼 패스 등 안전 종목'],['17:30','샤워·휴식'],['18:30','바비큐'],['21:00','보드게임·음악·정산']],
+   day2:[['09:00','기상'],['09:20','아침'],['10:00','마지막 수영/찜질 선택'],['10:25','정리·설거지'],['11:00','퇴실'],['11:20','조돌칼국수/맷돌순두부'],['12:30','복귀']]
+ },
+ F:{
+   no:'F',title:'뇌우·폭우 실내 방어',subtitle:'야외 레저를 미련 없이 버리고 박물관·식사·숙소로',
+   tags:[['뇌우 대응','rain'],['실내 중심','cool'],['취소 리스크 최소','value']],
+   meet:'국립경주박물관 주차장',meetQuery:'국립경주박물관',time:'10:00',busanLead:135,ulsanLead:70,
+   fit:'낙뢰·강풍·폭우 · 야외시설 운휴 우려',heat:'매우 낮음',energy:'낮음',cost:'낮음',lodging:'높음',
+   activityCost:0,parkMeal:50000,restaurant:'jodol',
+   why:'비가 많이 오는데도 ATV나 루지를 강행하면 이동·대기·환불 스트레스만 커집니다. 국립경주박물관을 중심으로 식사와 카페를 붙이고, 15시에 숙소로 들어가는 것이 여행 전체 만족도를 지키는 방법입니다.',
+   pros:['날씨로 인한 안전·환불 리스크 최소','상설전 위주로 비용 부담이 낮음','젖은 옷 없이 숙소에 들어갈 수 있음'],
+   cons:['액티비티 기대가 컸던 멤버는 심심할 수 있음','박물관 관심도가 낮으면 카페·게임 보완 필요','폭우 시 운전 자체에 시간 여유 필요'],
+   mapLinks:[['국립경주박물관','국립경주박물관'],['경주세계자동차박물관','경주 세계 자동차 박물관'],['숙소','경주 나리길 한옥 풀빌라']],
+   day1:[['07:45','부산팀 출발','폭우면 평소보다 20분 추가'],['08:50','울산팀 출발'],['10:00','국립경주박물관 집결','비가 심하면 가장 가까운 출입구에서 합류'],['10:10','상설전 관람','90분 내외, 각자 자유관람 후 정해진 지점 집결'],['11:45','조돌칼국수/낙지마실','따뜻한 국물 또는 매콤한 단체식'],['13:00','자동차박물관 또는 대형 카페','관심도 따라 선택'],['14:10','장보기'],['15:00','숙소 체크인'],['16:00','찜질방·보드게임','수영장 이용은 숙소 운영상태 확인'],['18:30','바비큐 또는 실내 대체식','바비큐장 제한 시 밀키트·배달 대비'],['21:00','카드·영화']],
+   day2:[['09:00','기상'],['09:30','아침'],['10:20','정리'],['11:00','퇴실'],['11:20','순두부/곰탕'],['12:30','천천히 복귀']]
+ },
+ G:{
+   no:'G',title:'취향 분할 후 점심 합류',subtitle:'3명은 루지, 2명은 실내·카페—두 차량의 장점을 쓰는 타협안',
+   tags:[['취향 존중','value'],['차량 2대 활용','thrill'],['점심 합류','cool']],
+   meet:'북군동 제1공영주차장',meetQuery:'북군동 제1공영주차장',time:'11:25',busanLead:205,ulsanLead:190,
+   fit:'멤버 취향이 갈림 · 비 적음',heat:'중간',energy:'개인별',cost:'중간',lodging:'높음',
+   activityCost:125000,parkMeal:50000,restaurant:'nakji',
+   why:'차량이 두 대이므로 전원이 같은 활동을 억지로 할 필요가 없습니다. 루지팀 3명과 실내 카페·자동차박물관팀 2명이 오전을 따로 보내고 11시 25분 북군동에서 만나 점심부터 함께 움직입니다.',
+   pros:['놀이기구 싫어하는 사람도 만족','두 차량 구조를 가장 잘 활용','점심 이후 일정은 완전히 함께 진행'],
+   cons:['아침부터 전원 단체사진은 없음','비용 정산을 개인별로 나눠야 함','각 팀 시간 엄수가 중요'],
+   mapLinks:[['북군동 제1공영주차장','북군동 제1공영주차장'],['경주루지월드','경주루지월드'],['경주세계자동차박물관','경주 세계 자동차 박물관']],
+   day1:[['07:00','각 팀 출발 설계','루지 3명은 09:10 현장, 실내팀 2명은 09:40 카페/박물관'],['09:30','루지팀 3회권','3명만 활동비 부담'],['09:40','실내팀 카페·자동차박물관','에어컨·느긋한 관람'],['11:25','북군동 제1공영주차장 전원 집결','96면 규모 공영주차장을 기준점으로 사용'],['11:35','낙지마실 또는 함양집','전원 첫 공동 일정'],['12:50','카페·장보기'],['15:00','숙소 체크인'],['15:30','풀빌라'],['18:30','바비큐'],['21:00','오전 활동 썰·게임']],
+   day2:[['09:00','기상'],['09:30','아침'],['10:15','정리'],['11:00','퇴실'],['11:20','해장 점심'],['12:30','각 차량 복귀']]
+ }
+};
+
+const RESTAURANTS = {
+ hamyang:{name:'함양집 보문점',badge:'더운 날 1순위',fit:'차가운 한우물회 + 경주다운 한 끼',hours:'10:30~19:40 · 수요일 휴무 · 15:30~17:00 브레이크',address:'경주시 북군1길 10-1',phone:'054-777-6947',cost:85000,
+  menus:['한우물회 14,000원 × 5','떡불고기 15,000원 1개 공유','숙취자는 곰탕/소고기국밥 10,000원'],
+  why:'폭염 속 루지·이동 후 빠르게 체온을 내리기 좋고, 다섯 명이 서로 다른 메뉴를 고르기도 쉽습니다.',caution:'인기 시간 대기가 길 수 있습니다. 테이블링 원격줄서기와 인근 무료 공영주차장을 활용하세요.',query:'함양집 보문점'},
+ nakji:{name:'낙지마실',badge:'5인 단체식',fit:'낙곱새 + 해물파전으로 푸짐하게',hours:'11:00~21:30 · 15:30~17:00 브레이크',address:'경주시 북군길 9',phone:'054-749-0048',cost:93000,
+  menus:['낙곱새 약 13,000원 × 5 기준','낙지해물파전 1~2개 공유','볶음밥은 배 상태 보고 추가'],
+  why:'5명이 한 냄비를 중심으로 먹어 단체 여행 분위기가 좋고, 매콤한 메뉴라 활동 후 식욕을 살리기 좋습니다.',caution:'워터파크 직전에는 너무 맵고 무거울 수 있으므로 워터파크 다음 날 또는 활동 종료 후 추천합니다.',query:'낙지마실 경주'},
+ jodol:{name:'조돌칼국수',badge:'다음 날 해장',fit:'동죽칼국수·해물파전·물총조개탕',hours:'10:00~21:30 · 16:00~17:00 브레이크',address:'경주시 북군길 3-6',phone:'0507-1360-3752',cost:80000,
+  menus:['동죽칼국수 5인분','새우해물파전 1개 공유','물총조개탕은 배 상태에 따라'],
+  why:'퇴실 후 뜨끈하고 짭짤한 국물로 해장하기 좋고, 북군동 식당가라 부산·울산으로 갈라지기 전 마지막 식사에 적합합니다.',caution:'메뉴 가격은 현장·시점에 따라 달라질 수 있어 예산은 약 8만원으로 잡았습니다.',query:'조돌칼국수 경주'},
+ sundubu:{name:'맷돌순두부',badge:'아침·해장형',fit:'순두부로 부담 없이 출발',hours:'통상 08:00~21:00 · 휴무/브레이크는 방문일 확인',address:'경주시 북군길 7',phone:'054-745-2791',cost:70000,
+  menus:['순두부찌개 또는 정식 5인','모두 숙취가 심할 때 무난','이른 시간 영업 여부 확인 후 방문'],
+  why:'매운 낙곱새나 고기보다 부담이 적어 다음 날 운전 전 식사로 좋고, 비교적 이른 시간 선택지가 됩니다.',caution:'요일별 휴무와 브레이크타임 정보가 바뀔 수 있어 전화 확인이 안전합니다.',query:'맷돌순두부 경주'},
+ hanwoo:{name:'경주천년한우 보문점',badge:'바비큐 업그레이드',fit:'식당보다 고기 구매 픽업에 특히 유용',hours:'판매장·식당 시간이 다를 수 있어 전화 확인',address:'경주시 보문로 545-9',phone:'054-777-1955',cost:150000,
+  menus:['구이용 한우를 숙소 바비큐용으로 구매','돼지고기·소시지와 혼합해 예산 조절','보냉백과 얼음팩 준비'],
+  why:'경주월드·캘리포니아비치와 가까워 물놀이 후 숙소로 이동하기 전에 고기를 사기 편합니다.',caution:'5명이 한우만 먹으면 예산이 크게 올라갑니다. 600~800g만 한우로 사고 나머지를 돼지고기로 섞는 방식이 현실적입니다.',query:'경주천년한우 보문점'}
+};
+
+const STORE={get(k){try{return window.localStorage.getItem(k)}catch(e){return null}},set(k,v){try{window.localStorage.setItem(k,v)}catch(e){}}};
+let selectedScenario = document.body.dataset.initialScenario || STORE.get('gjScenario') || 'A';
+let selectedRestaurant = document.body.dataset.initialRestaurant || STORE.get('gjRestaurant') || SCENARIOS[selectedScenario].restaurant;
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const fmt = n => new Intl.NumberFormat('ko-KR').format(Number(n)||0);
+const mapUrl = q => 'https://map.kakao.com/?q=' + encodeURIComponent(q);
+
+function scenarioCards(){
+ const grid=$('#scenarioGrid');
+ grid.innerHTML=Object.values(SCENARIOS).map(s=>`<button class="scenario-card ${s.no===selectedScenario?'selected':''}" data-id="${s.no}" aria-pressed="${s.no===selectedScenario}"><span class="pick"></span><span class="scenario-no">시나리오 ${s.no}</span><h3>${s.title}</h3><p>${s.subtitle}</p><div class="tags">${s.tags.map(t=>`<span class="tag ${t[1]}">${t[0]}</span>`).join('')}</div></button>`).join('');
+ $$('.scenario-card').forEach(b=>b.addEventListener('click',()=>selectScenario(b.dataset.id,true)));
+}
+function timeline(rows){return `<div class="timeline">${rows.map(r=>`<div class="time-row"><div class="time">${r[0]}</div><div class="dotcol"></div><div class="event"><b>${r[1]}</b><small>${r[2]||''}</small></div></div>`).join('')}</div>`}
+function detail(){
+ const s=SCENARIOS[selectedScenario];
+ $('#scenarioDetail').innerHTML=`
+ <div class="detail-hero"><div><span class="badge badge-blue">선택된 시나리오 ${s.no}</span><h2>${s.title}</h2><p>${s.subtitle}</p><div class="btn-row">${s.mapLinks.map(m=>`<a class="map-btn" href="${mapUrl(m[1])}" target="_blank" rel="noopener">📍 ${m[0]} 카카오맵</a>`).join('')}</div></div>
+ <div class="score-grid"><div class="score"><small>적합 날씨</small><b>${s.fit}</b></div><div class="score"><small>더위 노출</small><b>${s.heat}</b></div><div class="score"><small>체력 소모</small><b>${s.energy}</b></div><div class="score"><small>숙소 활용</small><b>${s.lodging}</b></div></div></div>
+ <div class="detail-body"><div class="subcard"><h3>왜 이 선택이 좋은가</h3><p>${s.why}</p><div class="procon"><div class="pro"><b>좋은 점</b>${s.pros.map(x=>'✓ '+x).join('<br>')}</div><div class="con"><b>아쉬운 점</b>${s.cons.map(x=>'• '+x).join('<br>')}</div></div></div>
+ <div class="subcard"><h3>집결 핵심</h3><p><b>${s.meet}</b> · <b>${s.time}</b></p><p class="small muted">부산팀은 다대포 → 주례 픽업 → 현장, 울산팀은 현대차 공장 인근 → 현장 직행입니다. 한 팀이 15분 이상 늦으면 다른 팀은 주차·화장실·발권을 먼저 진행하세요.</p><a class="map-btn" href="${mapUrl(s.meetQuery)}" target="_blank" rel="noopener">📍 집결지 열기</a></div></div>
+ <div class="detail-body"><div class="subcard"><h3>DAY 1 상세 시간표</h3>${timeline(s.day1)}</div><div class="subcard"><h3>DAY 2 상세 시간표</h3>${timeline(s.day2)}<div class="notice" style="margin-top:10px"><div class="icon">🔄</div><div><strong>교체 규칙</strong><br><span class="small">A·C·D 선택 후 전날 뇌우 예보가 뜨면 B 또는 F로 변경. 아침에 멤버 2명 이상이 피곤하다고 하면 E로 변경.</span></div></div></div></div>`;
+}
+function restaurants(){
+ const grid=$('#restaurantGrid');
+ grid.innerHTML=Object.entries(RESTAURANTS).map(([id,r])=>`<label class="restaurant ${id===selectedRestaurant?'selected':''}" data-id="${id}"><input class="radio" type="radio" name="restaurant" value="${id}" ${id===selectedRestaurant?'checked':''}><span class="badge badge-green">${r.badge}</span><h3>${r.name}</h3><p>${r.fit}</p><div class="mini-meta"><span>${r.hours.split(' · ')[0]}</span><span>예산 ${fmt(r.cost)}원/5인</span></div><ul class="menu">${r.menus.slice(0,2).map(m=>`<li>${m}</li>`).join('')}</ul></label>`).join('');
+ $$('input[name="restaurant"]').forEach(r=>r.addEventListener('change',()=>selectRestaurant(r.value,true)));
+}
+function restaurantDetail(){
+ const r=RESTAURANTS[selectedRestaurant];
+ $('#restaurantDetail').innerHTML=`<div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap"><div><span class="badge badge-dark">선택 식당</span><h2 style="margin:7px 0 4px">${r.name}</h2><p class="muted" style="margin:0">${r.address} · ${r.phone}</p></div><a class="map-btn" href="${mapUrl(r.query)}" target="_blank" rel="noopener">📍 카카오맵 열기</a></div><div class="detail-body"><div class="subcard"><h3>추천 주문</h3><ul>${r.menus.map(m=>`<li>${m}</li>`).join('')}</ul><p class="small"><b>운영 참고:</b> ${r.hours}</p></div><div class="subcard"><h3>이 식당을 고르는 이유</h3><p>${r.why}</p><p class="small" style="color:#8a3b2f"><b>주의:</b> ${r.caution}</p></div></div>`;
+}
+function selectScenario(id, updateRest=false){
+ selectedScenario=id;STORE.set('gjScenario',id);
+ const s=SCENARIOS[id];
+ $('#meetPlace').value=s.meet;$('#meetTime').value=s.time;
+ $('#costActivity').value=s.activityCost;$('#costParkMeal').value=s.parkMeal;
+ if(updateRest) selectRestaurant(s.restaurant,false);
+ scenarioCards();detail();updateDepartures();budget();updateShare();
+ document.body.dataset.initialScenario=id;
+}
+function selectRestaurant(id, render=true){
+ selectedRestaurant=id;STORE.set('gjRestaurant',id);document.body.dataset.initialRestaurant=id;
+ $('#costLunch').value=RESTAURANTS[id].cost;
+ if(render){restaurants();restaurantDetail();budget();updateShare();}
+ else{restaurants();restaurantDetail();}
+}
+function subtractMinutes(t,min){
+ const [h,m]=t.split(':').map(Number);let v=h*60+m-min;while(v<0)v+=1440;return String(Math.floor(v/60)%24).padStart(2,'0')+':'+String(v%60).padStart(2,'0');
+}
+function updateDepartures(){
+ const t=$('#meetTime').value||SCENARIOS[selectedScenario].time;
+ const s=SCENARIOS[selectedScenario];
+ $('#busanDepart').textContent=subtractMinutes(t,s.busanLead);
+ $('#ulsanDepart').textContent=subtractMinutes(t,s.ulsanLead);
+ $('#meetDisplay').textContent=t;$('#meetDisplayPlace').textContent=$('#meetPlace').value||s.meet;
+ updateShare();
+}
+function budget(){
+ const ids=['costStay','costActivity','costLunch','costParkMeal','costGroceries','costBBQ','costPool','costCars','costEtc'];
+ const vals=ids.map(id=>Number($('#'+id).value)||0);const total=vals.reduce((a,b)=>a+b,0);const per=Math.ceil(total/5/100)*100;
+ $('#totalCost').textContent='₩'+fmt(total);$('#perCost').textContent='1인 ₩'+fmt(per);
+ $('#budgetSummary').innerHTML=`활동비 <b>₩${fmt(vals[1])}</b> · 식사/장보기 <b>₩${fmt(vals[2]+vals[3]+vals[4])}</b><br>숙소·부대시설 <b>₩${fmt(vals[0]+vals[5]+vals[6])}</b> · 차량/기타 <b>₩${fmt(vals[7]+vals[8])}</b>`;
+ updateShare();
+}
+function checkedItems(){return $$('[data-check]:checked').map(c=>c.parentElement.innerText.trim());}
+function buildShareText(){
+ const s=SCENARIOS[selectedScenario],r=RESTAURANTS[selectedRestaurant];
+ const date=$('#tripDate').value||'날짜 미정';
+ const total=$('#totalCost').textContent,per=$('#perCost').textContent;
+ const firstDay=s.day1.slice(2,8).map(x=>`${x[0]} ${x[1]}`).join(' → ');
+ const checks=checkedItems();
+ return `[경주 1박 2일 · 5인 확정안]
+📅 ${date}
+🎯 시나리오 ${s.no}: ${s.title}
+☀️ 적합 조건: ${s.fit}
+
+🚙 부산팀: ${$('#busanDepart').textContent} 다대포 출발 → 주례 2명 픽업
+🚗 울산팀: ${$('#ulsanDepart').textContent} 현대차 공장 인근 출발
+📍 ${$('#meetTime').value} ${$('#meetPlace').value} 집결
+
+🗓 1일차 핵심
+${firstDay}
+🏠 숙소: 나리길 한옥 풀빌라 / 입실 15:00
+
+🍚 선택 식당: ${r.name}
+추천: ${r.menus[0]} / ${r.menus[1]}
+
+💰 ${total} / ${per}
+${checks.length?'✅ 체크 완료: '+checks.slice(0,6).join(', '):'✅ 준비물은 HTML 체크리스트 확인'}
+
+⚠️ 최고 34℃ 이상이면 한낮 ATV·루지 제외. 번개·강풍이면 B 또는 F안으로 즉시 변경.
+💬 이 문구에 의견 남기고 최종 투표!`;
+}
+function updateShare(){const el=$('#sharePreview');if(el)el.textContent=buildShareText();}
+async function copyText(text){
+ try{await navigator.clipboard.writeText(text);toast('카톡용 문구를 복사했습니다.');}
+ catch(e){const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();toast('카톡용 문구를 복사했습니다.');}
+}
+async function nativeShare(){
+ const text=buildShareText();
+ if(navigator.share){try{await navigator.share({title:'경주 1박 2일 5인 플랜',text});return}catch(e){if(e.name==='AbortError')return}}
+ await copyText(text);
+}
+function syncFormAttributes(root,original){
+ const a=[...root.querySelectorAll('input,select,textarea')],b=[...original.querySelectorAll('input,select,textarea')];
+ a.forEach((el,i)=>{const src=b[i];if(!src)return;if(el.tagName==='SELECT'){[...el.options].forEach((o,j)=>o.selected=src.options[j]?.selected)}else if(el.type==='checkbox'||el.type==='radio'){if(src.checked)el.setAttribute('checked','');else el.removeAttribute('checked')}else el.setAttribute('value',src.value)});
+}
+function currentHtml(){
+ const clone=document.documentElement.cloneNode(true);clone.querySelector('body').dataset.initialScenario=selectedScenario;clone.querySelector('body').dataset.initialRestaurant=selectedRestaurant;clone.querySelector('body').dataset.shared='1';syncFormAttributes(clone,document);
+ clone.querySelectorAll('.toast').forEach(e=>{e.classList.remove('show');e.textContent=''});
+ return '<!doctype html>\n'+clone.outerHTML;
+}
+async function shareFile(){
+ const html=currentHtml();const name=`경주_1박2일_${selectedScenario}안_${$('#tripDate').value||'날짜미정'}.html`;
+ const blob=new Blob([html],{type:'text/html;charset=utf-8'});
+ try{
+  const file=new File([blob],name,{type:'text/html'});
+  if(navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({title:'경주 1박 2일 선택 완료 플랜',text:`시나리오 ${selectedScenario} ${SCENARIOS[selectedScenario].title}`,files:[file]});return;}
+ }catch(e){if(e.name==='AbortError')return}
+ const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1500);toast('현재 선택 상태의 HTML을 저장했습니다. 카카오톡에 파일로 첨부하세요.');
+}
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2400)}
+function weatherLabel(code){if(code>=95)return '뇌우';if(code>=80)return '소나기';if(code>=61)return '비';if(code>=51)return '이슬비';if(code>=45)return '안개';if(code>=1)return '구름';return '맑음'}
+function weatherRecommend(max,rain,wind,code){
+ if(code>=95||rain>=70||wind>=35)return {ids:['F','B'],msg:'뇌우·강풍 가능성이 있어 F 실내 방어가 1순위입니다. 강동워터파크는 당일 실내 운영을 확인한 뒤 B안으로 선택하세요.'};
+ if(max>=34&&rain>=40)return {ids:['B','F','E'],msg:'폭염과 소나기가 겹칩니다. 실내외 전환이 쉬운 B안, 비가 강하면 F안, 체력 우선이면 E안이 좋습니다.'};
+ if(max>=34)return {ids:['A','E','B'],msg:'폭염입니다. 스릴은 A, 체력·예산은 E, 구름 변화가 크면 B를 고르세요. ATV와 루지는 제외하는 편이 낫습니다.'};
+ if(max>=31&&rain<40)return {ids:['C','A','D'],msg:'오전 야외활동이 가능한 범위입니다. C 루지 오픈런이 가장 균형적이며, ATV는 습도·운영을 확인한 뒤 D안으로 선택하세요.'};
+ if(rain>=40)return {ids:['B','F','E'],msg:'비 가능성이 있어 B 또는 F가 안전합니다. 비가 약하고 시설이 정상 운영되면 워터파크, 굵으면 박물관·숙소로 전환하세요.'};
+ return {ids:['C','D','E'],msg:'비교적 활동하기 좋은 날입니다. C 루지, D ATV, E 숙소 중심 중 취향과 예산으로 고르세요.'};
+}
+async function fetchWeather(){
+ const date=$('#tripDate').value;if(!date){toast('여행 날짜를 먼저 선택하세요.');return}
+ const btn=$('#fetchWeather');btn.disabled=true;btn.textContent='예보 불러오는 중…';
+ try{
+  const url='https://api.open-meteo.com/v1/forecast?latitude=35.85&longitude=129.24&daily=weather_code,temperature_2m_max,precipitation_probability_max,wind_speed_10m_max&timezone=Asia%2FSeoul&forecast_days=16';
+  const data=await fetch(url).then(r=>{if(!r.ok)throw new Error('weather');return r.json()});const i=data.daily.time.indexOf(date);if(i<0)throw new Error('range');
+  const max=Math.round(data.daily.temperature_2m_max[i]),rain=Math.round(data.daily.precipitation_probability_max[i]||0),wind=Math.round(data.daily.wind_speed_10m_max[i]||0),code=data.daily.weather_code[i];
+  const rec=weatherRecommend(max,rain,wind,code);
+  $('#weatherResult').innerHTML=`<h3>${date} · ${weatherLabel(code)}</h3><div class="weather-kpis"><div class="weather-kpi"><small>최고기온</small><b>${max}℃</b></div><div class="weather-kpi"><small>강수확률</small><b>${rain}%</b></div><div class="weather-kpi"><small>최대풍속</small><b>${wind} km/h</b></div></div><div class="recommend-box">추천 ${rec.ids.join(' · ')} — ${rec.msg}</div><div class="btn-row">${rec.ids.map(id=>`<button class="btn btn-sm btn-primary" data-weather-pick="${id}">${id}안 선택</button>`).join('')}</div><p class="small muted">Open-Meteo 보문권 격자 예보. 기상특보·시설 운휴는 별도 확인.</p>`;
+  $$('[data-weather-pick]').forEach(b=>b.addEventListener('click',()=>selectScenario(b.dataset.weatherPick,true)));
+ }catch(e){$('#weatherResult').innerHTML=`<h3>예보를 불러오지 못했습니다</h3><p>선택 날짜가 16일 예보 범위 밖이거나 네트워크 연결이 없습니다. 아래 수동 조건으로 추천을 실행하세요.</p><div class="recommend-box">폭염이면 A/B/E, 뇌우면 F/B, 31~33℃ 건조하면 C/D.</div>`}
+ finally{btn.disabled=false;btn.textContent='☀️ 경주 예보 불러오기'}
+}
+function manualRecommend(){const v=$('#manualWeather').value;const map={hot:'A',mixed:'B',mild:'C',rain:'F',tired:'E'};selectScenario(map[v],true);toast(`조건에 맞춰 ${map[v]}안을 선택했습니다.`)}
+function saveChecks(){const data={};$$('[data-check]').forEach(c=>data[c.dataset.check]=c.checked);STORE.set('gjChecks',JSON.stringify(data));updateShare()}
+function loadChecks(){try{const d=JSON.parse(STORE.get('gjChecks')||'{}');$$('[data-check]').forEach(c=>c.checked=!!d[c.dataset.check])}catch(e){}}
+function initDate(){const initial=document.body.dataset.initialDate;const saved=STORE.get('gjDate');const d=new Date();if(initial)$('#tripDate').value=initial;else if(saved)$('#tripDate').value=saved;else $('#tripDate').value=d.toISOString().slice(0,10)}
+function init(){
+ initDate();scenarioCards();detail();restaurants();restaurantDetail();
+ const s=SCENARIOS[selectedScenario],shared=document.body.dataset.shared==='1';
+ if(!shared){
+  $('#meetPlace').value=s.meet;$('#meetTime').value=s.time;
+  $('#costActivity').value=s.activityCost;$('#costParkMeal').value=s.parkMeal;$('#costLunch').value=RESTAURANTS[selectedRestaurant].cost;
+ }
+ updateDepartures();loadChecks();budget();updateShare();
+ $('#meetTime').addEventListener('input',updateDepartures);$('#meetPlace').addEventListener('input',updateDepartures);
+ $$('.money').forEach(e=>e.addEventListener('input',budget));$$('[data-check]').forEach(c=>c.addEventListener('change',saveChecks));
+ $('#tripDate').addEventListener('change',e=>{STORE.set('gjDate',e.target.value);document.body.dataset.initialDate=e.target.value;updateShare()});
+ $('#fetchWeather').addEventListener('click',fetchWeather);$('#manualRecommend').addEventListener('click',manualRecommend);
+ $('#nativeShare').addEventListener('click',nativeShare);$('#copyShare').addEventListener('click',()=>copyText(buildShareText()));$('#shareFile').addEventListener('click',shareFile);$('#printPlan').addEventListener('click',()=>window.print());
+ $('#floatingShare').addEventListener('click',()=>{updateShare();$('#shareSection').scrollIntoView({behavior:'smooth'});setTimeout(nativeShare,450)});
+}
+document.addEventListener('DOMContentLoaded',init);
+</script>
+</body>
+</html>
